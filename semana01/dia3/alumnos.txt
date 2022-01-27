@@ -1,0 +1,3 @@
+ronald ccoa,ronald@gmail.com,123456
+albert perez,albert@gmail.com,789456
+luis carpel,luis@gmail.com,4567821

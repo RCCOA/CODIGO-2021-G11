@@ -1,0 +1,4 @@
+#FLASK : Microfremawork web
+Flask
+#FLASK-SQLALCHEMY : ORM para manipular bases de datos relacionales
+Flask-SQLAlchemy
