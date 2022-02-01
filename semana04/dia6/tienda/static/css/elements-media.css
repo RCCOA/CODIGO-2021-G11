@@ -128,14 +128,14 @@
 	.testimonials-list.style-1 .testimonials-i .testimonials-i-cont:before {
 		width: 27px;
 		height: 26px;
-		background: url(../img/testimonials-angle1.png) no-repeat left top;
+		background: url(https://res.cloudinary.com/codigo2021/image/upload/v1643671703/ronccoashop/testimonials-angle1_xjdxsr.png) no-repeat left top;
 		top: 100%;
 		right: 33px;
 	}
 	.testimonials-list.style-1 .testimonials-i:nth-child(2n) .testimonials-i-cont:before {
 		left: 33px;
 		right: auto;
-		background: url(../img/testimonials-angle2.png) no-repeat left top;
+		background: url(https://res.cloudinary.com/codigo2021/image/upload/v1643671703/ronccoashop/testimonials-angle2_k9r3nr.png) no-repeat left top;
 	}
 	.testimonials-list.style-1 .testimonials-i .testimonials-i-img {
 		left: auto;

@@ -263,7 +263,7 @@ TABLE OF CONTENTS:
 	width: 27px;
 	height: 26px;
 	content: '';
-	background: url(../img/testimonials-angle1.png) no-repeat left top;
+	background: url(https://res.cloudinary.com/codigo2021/image/upload/v1643671703/ronccoashop/testimonials-angle1_xjdxsr.png) no-repeat left top;
 	position: absolute;
 	top: 100%;
 	right: 33px;
@@ -273,7 +273,7 @@ TABLE OF CONTENTS:
 	width: 27px;
 	height: 26px;
 	content: '';
-	background: url(../img/testimonials-angle2.png) no-repeat left top;
+	background: url(https://res.cloudinary.com/codigo2021/image/upload/v1643671703/ronccoashop/testimonials-angle2_k9r3nr.png) no-repeat left top;
 	position: absolute;
 	top: 100%;
 	left: 33px;
@@ -378,7 +378,7 @@ TABLE OF CONTENTS:
 	width: 25px;
 	height: 25px;
 	content: '';
-	background: url(../img/testimonials-angle3.png) no-repeat left top;
+	background: url(https://res.cloudinary.com/codigo2021/image/upload/v1643671703/ronccoashop/testimonials-angle3_tozoc9.png) no-repeat left top;
 	position: absolute;
 	top: 41px;
 	right: 100%;
@@ -388,7 +388,7 @@ TABLE OF CONTENTS:
 .testimonials-list.style-1 .testimonials-i:nth-child(2n) .testimonials-i-cont:before {
 	left: 100%;
 	right: auto;
-	background: url(../img/testimonials-angle4.png) no-repeat left top;
+	background: url(https://res.cloudinary.com/codigo2021/image/upload/v1643671703/ronccoashop/testimonials-angle4_rhztnn.png) no-repeat left top;
 }
 .testimonials-list.style-1 .testimonials-i .testimonials-i-img {
 	position: absolute;
