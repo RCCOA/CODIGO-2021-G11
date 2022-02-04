@@ -20,3 +20,30 @@ class CategoriaView(APIView):
         serCategoria = CategoriaSerializer(dataCategoria,many=True)
         return Response({'ok':True,
                         'content':serCategoria.data})
+
+class ClienteView(APIView):
+    
+    def get(self,request):
+        dataCliente = Cliente.objects.all()
+        serCliente = ClienteSerializer(dataCliente,many=True)
+        return Response({'ok':True,
+                         'content':serCliente.data})
+
+class ProductoView(APIView):
+    
+    def get(self,request):
+        dataProducto = Producto.objects.all()
+        serProducto = ProductoSerializer(dataProducto,many=True)
+        return Response({'ok':True,
+                         'content':serProducto.data})
+    
+class CategoriaProductoView(APIView):
+    
+    def get(self,request,id):
+        dataCategoria = Categoria.objects.get(pk=id)
+        serCategoria = CategoriaProductoSerializer(dataCategoria)
+        context = {
+            'ok':True,
+            'content':serCategoria.data
+        }
+        return Response(context)
