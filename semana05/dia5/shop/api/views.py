@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 # Create your views here.
-from .models import *
+from tienda.models import *
 from .serializers import *
 
 class IndexView(APIView):
