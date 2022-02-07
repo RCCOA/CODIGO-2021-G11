@@ -36,6 +36,7 @@ class Cliente(models.Model):
 class Pedido(models.Model):
     cliente = models.ForeignKey(Cliente,on_delete=models.RESTRICT)
     fecha_reg = models.DateTimeField(auto_now_add=True)
+    estado = models.CharField(max_length=20,default='pendiente')
     
     def __str__(self):
         return str(self.fecha_reg)
