@@ -3,10 +3,9 @@
 <main id="main" class="site-main">
     <div class="cont maincont">
         <h1 class="maincont-ttl">CLIENTE</h1>
-        <article class="page-cont">
         <div class="page-styling">
-            <div class="auth-wrap">                 
-                    <h3>Pedidos Nro : {{ pedido.id }} - FECHA : {{ pedido.fecha_reg }}</h3>
+            <div class="auth-wrap">
+                    <h3>Pedido Nro : {{ pedido.id }} - FECHA : {{ pedido.fecha_reg }}</h3>
                     <div class="woocommerce prod-litems section-list">
                         {% for pd in pedido.pedidodetalle_set.all %}
                         <article class="prod-li sectls">
@@ -39,12 +38,23 @@
                                     --></div>
                                 </div>
                         </article>
-                        
+                       
                         {% endfor %}
-                        {{ formpaypal.render }}
+                        
             </div>
         </div>
-    </article>
+        
+        <div class="cart-actions">
+            
+            <div class="cart-collaterals">
+                {{ formpaypal.render }}
+                <div class="order-total">
+                    <p class="cart-totals-ttl">Total</p>
+                    <p class="cart-totals-val">{{ pedido.total }}</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
 {% endblock %}
