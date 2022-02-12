@@ -23,6 +23,27 @@ python3 -m venv venv
 source venv/bin/activate
 
 
+----------
+
+DESPLIEGUE CON GUNICORN Y NGINX
+1 - probamos gunicoen
+recolectamos staticos
+
+python3 manage.py collectstatic
+gunicorn --bind 0.0.0.0:8000 shop.wsgi
+
+2 - copiar los archivos al sevidor
+primero se debe subir por git y hacer git pull en el servidor
+
+ingresamos a la carpeta awsconf
+
+sudo cp gunicorn.socket /etc/systemd/system/gunicorn.socket
+
+sudo cp gunicorn.service /etc/systemd/system/gunicorn.service
+
+sudo cp shop /etc/nginx/sites-available/shop
+
+
 
 
 
