@@ -1,5 +1,5 @@
 export const URL_BACKEND =
-	'http://20.121.203.102'
+	'http://52.188.110.149'
 	//'https://rccoabackendpos.herokuapp.com'
 	//'http://127.0.0.1:8000'
 	//'https://backposapi.herokuapp.com'
