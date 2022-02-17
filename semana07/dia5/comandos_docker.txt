@@ -1,0 +1,29 @@
+comandos basicos de docker : 
+
+https://gist.github.com/hansfpc/335159e420bd750c87ac2f2a3d083cdf
+
+
+
+1 - instalar un contenedor de prueba
+
+sudo docker pull hello-world
+
+sudo docker run hello-world
+
+2 - verificamos que esté levantado
+
+sudo docker ps
+
+3 - verificar el estado de docker
+
+sudo service docker status
+
+4 - instalamos postgres con docker ( https://hub.docker.com/_/postgres )
+
+sudo docker pull postgres
+
+sudo docker run --name codigog11 -e POSTGRES_PASSWORD=codigo2022 -d postgres
+sudo docker run -it postgres psql -h localhost -U postgres
+
+
+
