@@ -5,7 +5,7 @@ http.createServer(function (req,res){
     console.log(req.url);
     switch(req.url){
         case '/hola':
-            res.write('Hola Mundo Node');
+            res.write('Hola Mundo Node - Ronald Ccoa');
             res.end();
             break;
         default:
