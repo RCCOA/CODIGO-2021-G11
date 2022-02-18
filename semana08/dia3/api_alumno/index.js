@@ -17,8 +17,8 @@ app.get('/',function(req,res){
 
 const mysqlConnection = require('./database');
 
-app.get('/employee',function(req,res){
-    mysqlConnection.query('select * from employee',(err,rows,fields)=> {
+app.get('/tbl_alumno',function(req,res){
+    mysqlConnection.query('select * from tbl_alumno',(err,rows,fields)=> {
         if(!err){
             res.json(rows);
         }else{
@@ -27,15 +27,15 @@ app.get('/employee',function(req,res){
     })
 })
 
-app.post('/employee',function(req,res){
-    const {name,salary} = req.body;
-    const query = 'insert into employee(name,salary) values(?,?)';
+app.post('/tbl_alumno',function(req,res){
+    const {alumno_nombre,alumno_email} = req.body;
+    const query = 'insert into tbl_alumno(alumno_nombre,alumno_email) values(?,?)';
     
-    mysqlConnection.query(query,[name,salary],(err,rows,fields)=>{
+    mysqlConnection.query(query,[alumno_nombre,alumno_email],(err,rows,fields)=>{
         if(!err){
             res.json({
                 'status':true,
-                'content':'employed inserted'
+                'content':'Alumno inserted'
             })
         }
         else{
@@ -44,16 +44,16 @@ app.post('/employee',function(req,res){
     })
 })
 
-app.put('/employee/:id',function(req,res){
-    const {name,salary} = req.body;
-    const {id} = req.params;
-    const query = "update employee set name=?,salary=? where id=?"
+app.put('/tbl_alumno/:alumno_id',function(req,res){
+    const {alumno_nombre,alumno_email} = req.body;
+    const {alumno_id} = req.params;
+    const query = "update tbl_alumno set alumno_nombre=?,alumno_email=? where alumno_id=?"
 
-    mysqlConnection.query(query,[name,salary,id],(err,rows,fields)=>{
+    mysqlConnection.query(query,[alumno_nombre,alumno_email,alumno_id],(err,rows,fields)=>{
         if(!err){
             res.json({
                 'status':true,
-                'content':'Employee Updated'
+                'content':'Alumno Updated'
             })
         }else{
             console.log(err);
@@ -61,15 +61,15 @@ app.put('/employee/:id',function(req,res){
     })
 })
 
-app.delete('/employee/:alumno_id',function(req,res){
-    const {id} = req.params;
-    const query = "delete from employee where id=?"
+app.delete('/tbl_alumno/:alumno_id',function(req,res){
+    const {alumno_id} = req.params;
+    const query = "delete from tbl_alumno where alumno_id=?"
 
-    mysqlConnection.query(query,[id],(err,rows,fields)=>{
+    mysqlConnection.query(query,[alumno_id],(err,rows,fields)=>{
         if(!err){
             res.json({
                 'status':true,
-                'content':'Employee Deleted'
+                'content':'Alumno Deleted'
             })
         }else{
             console.log(err);
