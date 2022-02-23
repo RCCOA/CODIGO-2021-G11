@@ -14,10 +14,13 @@ app.listen(port,()=>console.log(`Servidor corriendo en http://localhost:${port}`
 /*******************TRABAJANDO CON SEQUELIZE************* */
 const Sequelize = require('sequelize');
 
+
 const sequelize = new Sequelize({
     dialect:'sqlite',
     storage:'./database.sqlite'
 })
+
+
 
 sequelize.authenticate()
 .then(()=>{
@@ -28,6 +31,7 @@ sequelize.authenticate()
 })
 
 // creamos modelos
+
 const Alumnos = sequelize.define(
     'alumnos',
     {
