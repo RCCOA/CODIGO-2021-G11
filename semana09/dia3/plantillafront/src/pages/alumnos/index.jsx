@@ -25,8 +25,8 @@ class Alumnos extends React.Component {
                             <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Cesar mayta</td>
-                                <td>cesarmayta@gmail.com</td>
+                                <td>Ronald Ccoa</td>
+                                <td>ronaldsc.06@gmail.com</td>
                             </tr>
                             </tbody>
                         </Table>

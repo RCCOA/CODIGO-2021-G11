@@ -16,9 +16,10 @@ ReactDOM.render(
     <BrowserRouter basename={'/'} >
       <Switch>
         
-
+ 
           <Layout name="backend">
-            <Route path={`/alumnos`} component={Alumnos} />
+            
+            <Route path={`/alumnos`} component={Alumnos} />  
           </Layout>
       </Switch>
     </BrowserRouter>
