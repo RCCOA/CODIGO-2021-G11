@@ -83,9 +83,9 @@ export default class Alumnos extends Component {
                                                     <td>{alu.nombre}</td>
                                                     <td>{alu.email}</td>
                                                 </tr>
-                                            )
-                                        })
-                                    }  
+                                            )})
+                                    }
+                                      
                                 </tbody>
                             </Table>
                         </Col>
